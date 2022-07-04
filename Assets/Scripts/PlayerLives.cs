@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,13 +12,12 @@ public class PlayerLives : MonoBehaviour
 
     private static readonly int Death = Animator.StringToHash("death");
 
-
     void Start()
     {
         _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
     }
-
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Trap"))
