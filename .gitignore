@@ -1,6 +1,7 @@
 .out/
 .idea/
 
+*/.idea/*
 
 [Ll]ibrary/
 [Tt]emp/
